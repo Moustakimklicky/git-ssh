@@ -1,0 +1,16 @@
+
+<ion-header>
+  <ion-navbar color="danger">
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title> <img src="../assets/food.gif"/></ion-title>
+        </ion-navbar>
+</ion-header>
+<ion-content  class="card-background-page">
+      <ion-card *ngFor="let menu of menus">
+       <img [src]="menu.acf.Image">
+           {{menu.title.rendered}}
+            {{menu.acf.prix}} dh
+      </ion-card>
+</ion-content>

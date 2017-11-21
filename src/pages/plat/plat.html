@@ -1,0 +1,26 @@
+
+<ion-header>
+  <ion-navbar color="danger">
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title> KLICKY APPS</ion-title>
+          <ion-buttons end>
+            <button ion-button>
+              <ion-icon name="md-more"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-navbar>
+</ion-header>
+<ion-content  class="card-background-page">
+    <ion-slides auto-play="2000" speed="2000" loop="true" pager>
+        <ion-slide *ngFor="let img of image">
+          <img class="full-image" src="{{ img }}" alt=""/>
+        </ion-slide>
+      </ion-slides>
+      <h3 text-center>KLICKY restaurant</h3>
+      <ion-card *ngFor="let article of news " >
+        <img [src]="article.acf.image_category"/>
+          <div class="card-title"> <button  class="br" (click)="menu()" > {{article.name}} </button></div>
+      </ion-card>
+</ion-content>

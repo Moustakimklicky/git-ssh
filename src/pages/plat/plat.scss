@@ -1,0 +1,34 @@
+page-plat {
+  .card-background-page {
+    ion-slides {
+      height: auto;
+    }
+    
+      ion-card {
+        position: relative;
+        text-align: center;
+      }
+    
+      .card-title {
+        position: initial;
+        top: 36%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+       background-color:black;
+       opacity: 0.9;
+    
+       
+      }
+      .br {
+        
+        font-size: 1.0em;
+        font-weight: bold;
+        color:white;
+        background-color: transparent;
+        display: block;
+       
+      }
+      
+    }    
+}

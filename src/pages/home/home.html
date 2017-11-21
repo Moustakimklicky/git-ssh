@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> <img src="../assets/food.gif"/></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-item nav-clear menu-close class="item-icon-left">
+        <ion-icon ios="ios-home" md="md-home"></ion-icon>
+     Acceuil
+    </ion-item>
+
+    
+      <ion-card>
+        <img src="../assets/propo.jpg"/>
+        <div  class="card-title" ><button class="bt" (click)="desc()"> A propos de nous</button></div>
+        <div class="card-subtitle">Klicky Agence Web</div>
+      </ion-card>
+    
+      <ion-card>
+        <img src="../assets/pizza.jpg"/>
+        <div class="card-title"><button class="br" (click)=" plat()" >Notre Menu</button></div>
+      </ion-card>
+    
+      <ion-card>
+        <img src="../assets/location.jpg"/>
+        <div class="card-title">Location</div>
+        <div class="card-subtitle"></div>
+      </ion-card>
+    
+      <ion-card>
+        <img src="../assets/actualit.jpg"/>
+        <div class="card-title">Nos Actualité</div>
+      </ion-card>
+      <ion-card>
+        <img src="../assets/reserv.jpg"/>
+        <div class="card-title">Réservation</div>
+      </ion-card>
+
+</ion-content>
